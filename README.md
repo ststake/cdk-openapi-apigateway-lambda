@@ -1,14 +1,15 @@
-# Welcome to your CDK TypeScript project
+# cdk-openapi-apigateway-lambda.git
 
-This is a blank project for CDK development with TypeScript.
+本リポジトリは NEC ソリューションイノベータ Advent Calendar 2022 の掲載記事のソースコードとなります。
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+- [NEC ソリューションイノベータ Advent Calendar 2022](https://qiita.com/advent-calendar/2022/nec_solution_innovators)
+- [CDKのAPIGateway+Lambdan構成をOpenAPIの定義から作成する]()
 
-## Useful commands
+## 動かし方
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+```
+git clone 
+cd cdk-openapi-apigateway-lambda
+npm ci
+cdk deploy
+```
