@@ -8,7 +8,7 @@
 ## 動かし方
 
 ```
-git clone 
+git clone https://github.com/ststake/cdk-openapi-apigateway-lambda.git
 cd cdk-openapi-apigateway-lambda
 npm ci
 cdk deploy
