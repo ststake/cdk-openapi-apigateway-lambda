@@ -13,7 +13,7 @@ export class CdkOpenapiExpressStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    // lambda
+    // Lambda関数の作成
     const fn = new NodejsFunction(this, "express-lambda", {
       entry: "./api/src/index.ts",
       handler: "handler",
@@ -26,7 +26,7 @@ export class CdkOpenapiExpressStack extends cdk.Stack {
       },
     });
 
-    // apigateway from openapi
+    // SpecRestApiを使ったAPIGatewayの作成
     const swaggerYaml = yaml.parse(
       fs.readFileSync("./api/docs/openapi.yaml").toString()
     );
